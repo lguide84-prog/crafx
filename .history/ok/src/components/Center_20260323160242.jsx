@@ -1,0 +1,70 @@
+import React from "react";
+
+const CenteredHeroPage = () => {
+  return (
+    <div className="relative min-h-screen w-full">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "url('/images/last.webp')",
+        }}
+      >
+        {/* Dark Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      {/* Centered Content */}
+      <div className="relative z-10 flex min-h-screen items-center justify-center text-center park">
+        <div className="container mx-auto px-6 md:px-12 lg:px-20">
+          <div className="max-w-2xl mx-auto">
+            {/* Heading */}
+            <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-white mb-6 leading-tight animate-fade-in">
+           Take the first step toward building your dream team.
+            </h1>
+
+            {/* Paragraph */}
+            <p className="text-base md:text-lg lg:text-md text-gray-200 mb-10 leading-relaxed max-w-2xl mx-auto">
+             Start using Linkrow today and connect with top talent faster and more efficiently!
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-[#1F514C] font-semibold rounded-4xl transition duration-300 transform hover:scale-105 shadow-lg group">
+                <span>Free Consultation</span>
+             <img src="/images/ok.svg"/>
+              </button>
+
+              <button className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-transparent border-2 border-white hover:bg-[#1F514C] hover:text-white hover:border-0 text-white font-semibold rounded-lg transition duration-300 transform hover:scale-105 group">
+               
+                <span>Explore Our Services</span>
+                   <img src="/images/ok1.svg"/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Optional: Add a subtle scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 14l-7 7-7-7m14-6l-7 7-7-7"
+          />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+export default CenteredHeroPage;
