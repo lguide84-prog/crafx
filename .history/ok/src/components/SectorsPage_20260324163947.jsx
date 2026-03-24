@@ -12,10 +12,7 @@ import {
   FaChartLine as FaChartLineIcon,
   FaUsers as FaUsersIcon,
   FaGlobe,
-  FaCar,
-  FaBuilding,
-  FaBolt,
-  FaIndustry
+  FaCar
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 

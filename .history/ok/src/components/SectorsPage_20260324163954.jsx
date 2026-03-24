@@ -14,8 +14,7 @@ import {
   FaGlobe,
   FaCar,
   FaBuilding,
-  FaBolt,
-  FaIndustry
+  FaBolt
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 

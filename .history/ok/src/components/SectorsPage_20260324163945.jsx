@@ -11,11 +11,7 @@ import {
   FaArrowRight,
   FaChartLine as FaChartLineIcon,
   FaUsers as FaUsersIcon,
-  FaGlobe,
-  FaCar,
-  FaBuilding,
-  FaBolt,
-  FaIndustry
+  FaGlobe
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 

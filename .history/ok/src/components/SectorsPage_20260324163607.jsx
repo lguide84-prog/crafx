@@ -11,11 +11,7 @@ import {
   FaArrowRight,
   FaChartLine as FaChartLineIcon,
   FaUsers as FaUsersIcon,
-  FaGlobe,
-  FaCar,
-  FaBuilding,
-  FaBolt,
-  FaIndustry
+  FaGlobe
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 
@@ -48,14 +44,14 @@ const SectorsPage = () => {
       color: "#18403C",
       bgColor: "#18403C10"
     },
-  {
-  title: "BFSI",
-  description: "Skilled professionals in Banking, Financial Services, and Insurance, specializing in risk management, investment planning, auditing, compliance, and financial analysis.",
-  icon: FaChartLine,
-  vacancies: "200+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-},
+    {
+      title: "",
+      description: "Financial experts for accounting, auditing, budgeting, and financial planning and analysis.",
+      icon: FaChartLine,
+      vacancies: "200+ Vacancy",
+      color: "#18403C",
+      bgColor: "#18403C10"
+    },
     {
       title: "Business Development",
       description: "Strategic business development professionals to drive growth and expand market presence.",
@@ -87,39 +83,7 @@ const SectorsPage = () => {
       vacancies: "100+ Vacancy",
       color: "#18403C",
       bgColor: "#18403C10"
-    },
-    {
-  title: "Automobile",
-  description: "Experienced professionals in automobile, manufacturing, telecommunication, and power distribution sectors, delivering efficient workforce solutions to drive organizational growth.",
-  icon: FaCar,
-  vacancies: "100+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-},
-{
-  title: "Building Infrastructure",
-  description: "Reliable workforce and payroll solutions for infrastructure projects, ensuring smooth operations, compliance, and timely workforce management.",
-  icon: FaBuilding,
-  vacancies: "100+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-},
-{
-  title: "Power & Energy",
-  description: "Skilled professionals focused on energy optimization, utility analysis, and efficient resource management to reduce costs and improve sustainability.",
-  icon: FaBolt,
-  vacancies: "100+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-},
-{
-  title: "Manufacturing & Processes",
-  description: "Expert workforce solutions to support manufacturing operations and process improvements, helping organizations implement change and enhance productivity.",
-  icon: FaIndustry,
-  vacancies: "100+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-}
+    }
   ];
 
   // Intersection Observer for scroll animations

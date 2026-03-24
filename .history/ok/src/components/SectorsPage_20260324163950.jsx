@@ -13,9 +13,7 @@ import {
   FaUsers as FaUsersIcon,
   FaGlobe,
   FaCar,
-  FaBuilding,
-  FaBolt,
-  FaIndustry
+  FaBuilding
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 
