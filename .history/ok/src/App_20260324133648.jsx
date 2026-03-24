@@ -9,7 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TestimonialSlider from "./components/TestimonialSlider";
-
+import FeaturesPage from "./components/FeaturesPage";
 
 function App() {
   return (

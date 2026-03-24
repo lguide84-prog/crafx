@@ -22,7 +22,6 @@ import {
   FaQuoteLeft
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import FeaturesPage from "../components/FeaturesPage";
 
 const AboutUs = () => {
 
@@ -216,7 +215,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-  <FeaturesPage/>
+<div>
+  <Featu
+</div>
       {/* Our Values Section */}
       <div className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto px-4">

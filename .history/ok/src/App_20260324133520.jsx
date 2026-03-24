@@ -10,7 +10,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TestimonialSlider from "./components/TestimonialSlider";
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -20,7 +19,7 @@ function App() {
           
           <>
          
-    
+      
       <HeroPage/>
    
   

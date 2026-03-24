@@ -62,14 +62,18 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
-          <div className="flex items-center  cursor-pointer group" onClick={() => handleNavClick("home", "/")}>
-            <div className="relative">
-            <img src="/images/logo5.png" className="h-17 w-26"/>
-            
-            </div>
-            
-        
-          </div>
+          <div 
+  className="flex items-center gap-2 cursor-pointer group" 
+  onClick={() => handleNavClick("home", "/")}
+>
+  <div className="relative">
+    <img src="/images/logo5.png" className="h-17 w-26" />
+  </div>
+
+  <h1 className="text-lg md:text-xl font-semibold text-gray-800">
+    Zenon Hiring Solutions
+  </h1>
+</div>
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-1 lg:space-x-2">

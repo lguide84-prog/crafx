@@ -182,17 +182,11 @@ const SectorsPage = () => {
                   {/* Circle Icon */}
                   <div
                     className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto rounded-full flex items-center justify-center transition-all duration-500 cursor-pointer"
-                 style={{
-  background: "#3b82f6",   // 👈 always blue
-  transform: isHovered ? "scale(1.1)" : "scale(1)",
-  boxShadow: isHovered 
-    ? "0 20px 35px -12px rgba(59, 130, 246, 0.4)" // 👈 blue shadow
-    : "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
-}}
+                   
                   >
                     <IconComponent 
-                      className="text-4xl sm:text-5xl md:text-6xl transition-all text-white duration-500" 
-                     
+                      className="text-4xl sm:text-5xl md:text-6xl transition-all duration-500" 
+                      style={{ color: isHovered ? "white" : "#18403C" }}
                     />
                     
                     {/* Pulse Effect on Hover */}

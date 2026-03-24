@@ -64,7 +64,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="flex items-center  cursor-pointer group" onClick={() => handleNavClick("home", "/")}>
             <div className="relative">
-            <img src="/images/logo5.png" className="h-17 w-26"/>
+            <img src="/images/logo5.png" className="h-17 w-30"/>
             
             </div>
             

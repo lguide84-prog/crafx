@@ -128,7 +128,7 @@ const SectorsPage = () => {
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-[#18403C] to-[#2c6b64] bg-clip-text text-transparent">
-       Industries We Serve
+       
           </h2>
           
           <div className="w-20 h-1 bg-gradient-to-r from-[#18403C] to-[#2c6b64] mx-auto mb-4 md:mb-6 rounded-full"></div>
@@ -182,17 +182,19 @@ const SectorsPage = () => {
                   {/* Circle Icon */}
                   <div
                     className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto rounded-full flex items-center justify-center transition-all duration-500 cursor-pointer"
-                 style={{
-  background: "#3b82f6",   // 👈 always blue
-  transform: isHovered ? "scale(1.1)" : "scale(1)",
-  boxShadow: isHovered 
-    ? "0 20px 35px -12px rgba(59, 130, 246, 0.4)" // 👈 blue shadow
-    : "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
-}}
+                    style={{
+                      background: isHovered 
+                        ? "linear-gradient(135deg, #18403C 0%, #2c6b64 100%)" 
+                        : "#18403C10",
+                      transform: isHovered ? "scale(1.1)" : "scale(1)",
+                      boxShadow: isHovered 
+                        ? "0 20px 35px -12px rgba(24, 64, 60, 0.3)" 
+                        : "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
+                    }}
                   >
                     <IconComponent 
-                      className="text-4xl sm:text-5xl md:text-6xl transition-all text-white duration-500" 
-                     
+                      className="text-4xl sm:text-5xl md:text-6xl transition-all duration-500" 
+                      style={{ color: isHovered ? "white" : "#18403C" }}
                     />
                     
                     {/* Pulse Effect on Hover */}
