@@ -165,7 +165,7 @@ const IndustriesPage = () => {
               Empowering Industries
               <span className="block text-white/90">with Expert Solutions</span>
             </h1>
-            <p className="text-white/90 text-md md:text-xl mb-8 max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
               Delivering specialized staffing, inspection, and management solutions across diverse sectors worldwide
             </p>
           

@@ -161,11 +161,11 @@ const IndustriesPage = () => {
               <FaIndustry className="text-white text-sm" />
               <span className="text-white font-medium text-sm">Industries We Serve</span>
             </div>
-            <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Empowering Industries
               <span className="block text-white/90">with Expert Solutions</span>
             </h1>
-            <p className="text-white/90 text-md md:text-xl mb-8 max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
               Delivering specialized staffing, inspection, and management solutions across diverse sectors worldwide
             </p>
           
