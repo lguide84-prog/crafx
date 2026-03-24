@@ -216,9 +216,18 @@ const SectorsPage = () => {
                     {sector.description}
                   </p>
 
-                
+                  {/* Vacancy Badge */}
+                  <div className="inline-block bg-[#18403C]/10 rounded-full px-3 py-1 mb-3">
+                    <span className="text-xs font-semibold text-[#18403C]">{sector.vacancies}</span>
+                  </div>
 
-              
+                  {/* Apply Button */}
+                  <div className="mt-2">
+                    <button className="group/btn inline-flex items-center gap-1 text-[#18403C] font-medium text-sm hover:gap-2 transition-all duration-300">
+                      Apply Now
+                      <FaArrowRight className="text-xs transition-transform duration-300 group-hover/btn:translate-x-1" />
+                    </button>
+                  </div>
                 </div>
               </div>
             );

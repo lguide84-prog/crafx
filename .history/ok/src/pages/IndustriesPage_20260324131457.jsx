@@ -124,7 +124,7 @@ const IndustriesPage = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen park">
+    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-[#18403C] to-[#2c6b64] overflow-hidden">
         {/* Animated Background Pattern */}
@@ -133,11 +133,11 @@ const IndustriesPage = () => {
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
         
-        <div className="relative container mx-auto px-4 py-20 md:py-28 mt-10">
+        <div className="relative container mx-auto px-4 py-20 md:py-28">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-5 py-2 rounded-full mb-6">
               <FaIndustry className="text-white text-sm" />
-              <span className="text-white font-medium text-sm">Industries We Contribute</span>
+              <span className="text-white font-medium text-sm">Industries We Serve</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Empowering Industries
@@ -150,7 +150,7 @@ const IndustriesPage = () => {
         </div>
         
         {/* Wave Decoration */}
-        <div className="absolute -bottom-10 left-0 right-0 ">
+        <div className="absolute bottom-0 left-0 right-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path fill="#f9fafb" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
           </svg>
@@ -230,7 +230,10 @@ const IndustriesPage = () => {
                       <IconComponent className="text-2xl text-[#18403C]" />
                     </div>
                     
-                   
+                    {/* Stats Badge */}
+                    <div className="absolute top-3 right-3 bg-[#18403C]/90 backdrop-blur-sm rounded-full px-2 py-1">
+                      <span className="text-white text-xs font-medium">{industry.stats}</span>
+                    </div>
                   </div>
                   
                   {/* Content */}
@@ -246,7 +249,10 @@ const IndustriesPage = () => {
                     
                     {/* Learn More Button */}
                     <div className="flex items-center justify-between mt-2 pt-3 border-t border-gray-100">
-                     
+                      <div className="flex items-center gap-2 text-[#18403C] font-medium text-sm group/link">
+                        <span>Apply Now</span>
+                        <FaArrowRight className="text-xs transition-transform duration-300 group-hover/link:translate-x-1" />
+                      </div>
                       <div className="flex items-center gap-1">
                         <FaCheckCircle className="text-green-500 text-xs" />
                         <span className="text-xs text-gray-500">Active</span>
@@ -282,7 +288,9 @@ const IndustriesPage = () => {
             <button className="bg-white text-[#18403C] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
               Upload Resume
             </button>
-           
+            <button className="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#18403C] transition-all duration-300">
+              View All Jobs
+            </button>
           </div>
         </div>
       </div>

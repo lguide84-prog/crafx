@@ -7,17 +7,15 @@ import {
   FaGlobe,
   FaIndustry,
   FaBuilding,
+  FaRoad,
   FaCar,
   FaBolt,
   FaLeaf,
   FaLaptopCode,
+
   FaChargingStation,
   FaCogs,
-  FaHeadset,
-  FaRocket,
-  FaBullhorn,
-  FaFlask,
-  FaPalette
+  FaHardHat
 } from "react-icons/fa";
 import { GiMining, GiOilRig, GiBridge } from "react-icons/gi";
 import { MdOutlineSecurity } from "react-icons/md";
@@ -28,75 +26,99 @@ const IndustriesPage = () => {
 
   const industries = [
     {
+      title: "Oil & Gas",
+      description: "In the safety-critical Oil & Gas industry, Esko Spirale Group offers trusted Third-Party Inspections (TPI) and T4S Audits to ensure asset integrity, operational safety, and compliance with international standards.",
+      image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&h=400&fit=crop",
+      icon: GiOilRig,
+      stats: "98% Compliance Rate",
+      color: "#18403C"
+    },
+    {
+      title: "Automobile",
+      description: "Our spectrum of staffing expertise are in the fields of Automobiles, Manufacturing, Telecommunication, Power Distribution, etc. and we feel accomplished, when the organizations benefit from our experience.",
+      image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop",
+      icon: FaCar,
+      stats: "10K+ Placements",
+      color: "#18403C"
+    },
+    {
+      title: "Road & Bridges",
+      description: "We offer comprehensive staffing solutions for Road & Bridge projects, ensuring you find skilled professionals for successful infrastructure development. Our experts help you meet project & maintaining the highest quality standards.",
+      image: "https://images.unsplash.com/photo-1545972154-9bb223aac798?w=600&h=400&fit=crop",
+      icon: GiBridge,
+      stats: "500+ Projects",
+      color: "#18403C"
+    },
+    {
+      title: "Building Infrastructure",
+      description: "We offer reliable payroll management solutions tailored for the building infrastructure sector, ensuring timely payments, compliance, and workforce satisfaction at every project stage.",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
+      icon: FaBuilding,
+      stats: "99% On-time Payroll",
+      color: "#18403C"
+    },
+    {
+      title: "EV Charging Stations",
+      description: "We provide specialized training programs for EV Charging Station operations, focusing on safety, technical skills, and efficient management.",
+      image: "https://images.unsplash.com/photo-1671782584185-1300064c5289?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXYlMjBjYXJ8ZW58MHx8MHx8fDA%3D",
+      icon: FaChargingStation,
+      stats: "5000+ Trained",
+      color: "#18403C"
+    },
+    {
+      title: "Telecommunication",
+      description: "In the fast-paced telecommunication industry, precise execution is critical to ensure seamless connectivity, minimize downtime, and maximize operational efficiency.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
+      icon: FaLaptopCode,
+      stats: "99.9% Uptime",
+      color: "#18403C"
+    },
+    {
       title: "Information Technology",
       description: "We provide advice, guidelines and a road map for sourcing, utilizing and managing IT assets and resources.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
       icon: FaLaptopCode,
       stats: "24/7 Support",
-      vacancies: "100+ Vacancy",
       color: "#18403C"
     },
     {
-      title: "Customer Service",
-      description: "Expert customer service professionals dedicated to delivering exceptional support and client satisfaction.",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop",
-      icon: FaHeadset,
-      stats: "Unlimited",
-      vacancies: "Unlimited Vacancy",
+      title: "Infrastructure",
+      description: "We help businesses across a broad range of industries design, modify, and maintain their infrastructure in order to improve efficiency, manage cost, and minimize security risks.",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop",
+      icon: FaIndustry,
+      stats: "30% Cost Reduction",
       color: "#18403C"
     },
     {
-      title: "Human Resource",
-      description: "Skilled HR professionals to manage talent acquisition, employee relations, and organizational development.",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=400&fit=crop",
-      icon: FaUsers,
-      stats: "200+ Openings",
-      vacancies: "200+ Vacancy",
+      title: "Mining & Metals",
+      description: "We help clients to get best staffing in cement industry, fabrications, crusher, machine installation, machine maintenance and much more to achieve our organisational goal.",
+      image: "https://images.unsplash.com/photo-1557425493-6f90ae4659fc?w=600&h=400&fit=crop",
+      icon: GiMining,
+      stats: "100+ Clients",
       color: "#18403C"
     },
     {
-      title: "Finance",
-      description: "Financial experts for accounting, auditing, budgeting, and financial planning and analysis.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-      icon: FaChartLine,
-      stats: "200+ Openings",
-      vacancies: "200+ Vacancy",
+      title: "Power & Energy",
+      description: "We analyze the clients' utility bills, inspect the equipment and machinery used for production, and strategize energy plans to limit energy waste and costing.",
+      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop",
+      icon: FaBolt,
+      stats: "40% Energy Saved",
       color: "#18403C"
     },
     {
-      title: "Business Development",
-      description: "Strategic business development professionals to drive growth and expand market presence.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
-      icon: FaRocket,
-      stats: "Unlimited",
-      vacancies: "Unlimited Vacancy",
+      title: "Green Energy",
+      description: "Driving innovation in the Green Energy sector, Spirale Group offers expert Third-Party Inspections (TPI) and Safety Audits that promote regulatory adherence, risk mitigation, and operational excellence across renewable power infrastructure.",
+      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop",
+      icon: FaLeaf,
+      stats: "Carbon Neutral",
       color: "#18403C"
     },
     {
-      title: "Sales & Marketing",
-      description: "Dynamic sales and marketing experts to boost brand visibility and drive revenue growth.",
-      image: "https://images.unsplash.com/photo-1552581234-26160f608093?w=600&h=400&fit=crop",
-      icon: FaBullhorn,
-      stats: "Unlimited",
-      vacancies: "Unlimited Vacancy",
-      color: "#18403C"
-    },
-    {
-      title: "Pharma & FMCG",
-      description: "Specialized professionals for pharmaceutical and fast-moving consumer goods industries.",
-      image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop",
-      icon: FaFlask,
-      stats: "100+ Openings",
-      vacancies: "100+ Vacancy",
-      color: "#18403C"
-    },
-    {
-      title: "Design & Creative",
-      description: "Creative designers and artists for UI/UX, graphic design, and visual communication.",
-      image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=400&fit=crop",
-      icon: FaPalette,
-      stats: "100+ Openings",
-      vacancies: "100+ Vacancy",
+      title: "Manufacturing & Processes",
+      description: "We provide services designed to assist our clients in implementing their change initiatives. Our expertise helps optimize production processes and enhance operational efficiency.",
+      image: "https://images.unsplash.com/photo-1581092335871-2716c99d015c?w=600&h=400&fit=crop",
+      icon: FaCogs,
+      stats: "50% Efficiency Gain",
       color: "#18403C"
     }
   ];
@@ -133,19 +155,20 @@ const IndustriesPage = () => {
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
         
-        <div className="relative container mx-auto px-4 py-20 md:py-28 mt-10">
+        <div className="relative container mx-auto px-4 py-20 md:py-28 mt-3">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-5 py-2 rounded-full mb-6">
               <FaIndustry className="text-white text-sm" />
-              <span className="text-white font-medium text-sm">Industries We Contribute</span>
+              <span className="text-white font-medium text-sm">Industries We Serve</span>
             </div>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Empowering Industries
               <span className="block text-white/90">with Expert Solutions</span>
             </h1>
-            <p className="text-white/90 text-base md:text-xl mb-8 max-w-2xl mx-auto">
+            <p className="text-white/90 text-md md:text-xl mb-8 max-w-2xl mx-auto">
               Delivering specialized staffing, inspection, and management solutions across diverse sectors worldwide
             </p>
+          
           </div>
         </div>
         
@@ -173,7 +196,7 @@ const IndustriesPage = () => {
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
             <FaGlobe className="text-3xl md:text-4xl text-[#18403C] mx-auto mb-2" />
             <div className="text-2xl md:text-3xl font-bold text-[#18403C]">15+</div>
-            <div className="text-xs md:text-sm text-gray-600">States Served</div>
+            <div className="text-xs md:text-sm text-gray-600">State Served</div>
           </div>
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
             <MdOutlineSecurity className="text-3xl md:text-4xl text-[#18403C] mx-auto mb-2" />
@@ -191,7 +214,7 @@ const IndustriesPage = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#18403C] to-[#2c6b64] mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-            Explore current opportunities across various industries
+            Specialized solutions tailored to meet the unique challenges of each industry sector
           </p>
         </div>
 
@@ -230,7 +253,10 @@ const IndustriesPage = () => {
                       <IconComponent className="text-2xl text-[#18403C]" />
                     </div>
                     
-                   
+                    {/* Stats Badge */}
+                    <div className="absolute top-3 right-3 bg-[#18403C]/90 backdrop-blur-sm rounded-full px-2 py-1">
+                      <span className="text-white text-xs font-medium">{industry.stats}</span>
+                    </div>
                   </div>
                   
                   {/* Content */}
@@ -238,18 +264,19 @@ const IndustriesPage = () => {
                     <h3 className="text-xl font-bold text-[#18403C] mb-2 group-hover:text-[#2c6b64] transition-colors">
                       {industry.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-3 line-clamp-2">
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
                       {industry.description}
                     </p>
                     
-                   
-                    
-                    {/* Learn More Button */}
-                    <div className="flex items-center justify-between mt-2 pt-3 border-t border-gray-100">
-                     
+                    {/* Features List */}
+                    <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100">
+                      <div className="flex items-center gap-2 text-[#18403C] font-medium text-sm group/link">
+                        <span>Learn More</span>
+                        <FaArrowRight className="text-xs transition-transform duration-300 group-hover/link:translate-x-1" />
+                      </div>
                       <div className="flex items-center gap-1">
                         <FaCheckCircle className="text-green-500 text-xs" />
-                        <span className="text-xs text-gray-500">Active</span>
+                        <span className="text-xs text-gray-500">Verified</span>
                       </div>
                     </div>
                   </div>
@@ -269,29 +296,13 @@ const IndustriesPage = () => {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="container mx-auto px-4 pb-16 md:pb-24">
-        <div className="bg-gradient-to-r from-[#18403C] to-[#2c6b64] rounded-3xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
-            Ready to Start Your Career Journey?
-          </h3>
-          <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-            Submit your resume and let our experts find the perfect opportunity for you
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-[#18403C] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Upload Resume
-            </button>
-           
-          </div>
-        </div>
-      </div>
+   
 
       {/* Add custom styles for line-clamp */}
       <style jsx>{`
-        .line-clamp-2 {
+        .line-clamp-3 {
           display: -webkit-box;
-          -webkit-line-clamp: 2;
+          -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
           overflow: hidden;
         }

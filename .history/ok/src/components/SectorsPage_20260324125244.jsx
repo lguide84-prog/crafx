@@ -109,7 +109,7 @@ const SectorsPage = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 min-h-screen py-12 sm:py-16 md:py-20 px-4 park">
+    <div className="bg-gradient-to-b from-white to-gray-50 min-h-screen py-12 sm:py-16 md:py-20 px-4">
       <div className="container mx-auto">
         {/* Header Section */}
         <div 
@@ -216,9 +216,18 @@ const SectorsPage = () => {
                     {sector.description}
                   </p>
 
-                
+                  {/* Vacancy Badge */}
+                  <div className="inline-block bg-[#18403C]/10 rounded-full px-3 py-1 mb-3">
+                    <span className="text-xs font-semibold text-[#18403C]">{sector.vacancies}</span>
+                  </div>
 
-              
+                  {/* Apply Button */}
+                  <div className="mt-2">
+                    <button className="group/btn inline-flex items-center gap-1 text-[#18403C] font-medium text-sm hover:gap-2 transition-all duration-300">
+                      Apply Now
+                      <FaArrowRight className="text-xs transition-transform duration-300 group-hover/btn:translate-x-1" />
+                    </button>
+                  </div>
                 </div>
               </div>
             );

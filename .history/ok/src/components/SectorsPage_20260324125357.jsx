@@ -218,7 +218,13 @@ const SectorsPage = () => {
 
                 
 
-              
+                  {/* Apply Button */}
+                  <div className="mt-2">
+                    <button className="group/btn inline-flex items-center gap-1 text-[#18403C] font-medium text-sm hover:gap-2 transition-all duration-300">
+                      Apply Now
+                      <FaArrowRight className="text-xs transition-transform duration-300 group-hover/btn:translate-x-1" />
+                    </button>
+                  </div>
                 </div>
               </div>
             );

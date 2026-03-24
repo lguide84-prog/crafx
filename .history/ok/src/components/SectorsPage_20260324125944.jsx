@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { 
-  FaLaptopCode, 
-  FaHeadset, 
-  FaUsers, 
-  FaChartLine, 
-  FaRocket, 
-  FaBullhorn, 
-  FaFlask, 
-  FaPalette,
   FaArrowRight,
-  FaChartLine as FaChartLineIcon,
-  FaUsers as FaUsersIcon,
+  FaChartLine,
+  FaUsers,
   FaGlobe
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
@@ -23,66 +15,58 @@ const SectorsPage = () => {
     {
       title: "Information Technology",
       description: "We provide advice, guidelines and a road map for sourcing, utilizing and managing IT assets and resources.",
-      icon: FaLaptopCode,
+      logo: "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
       vacancies: "100+ Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
+      color: "#18403C"
     },
     {
       title: "Customer Service",
       description: "Expert customer service professionals dedicated to delivering exceptional support and client satisfaction.",
-      icon: FaHeadset,
+      logo: "https://cdn-icons-png.flaticon.com/512/3145/3145768.png",
       vacancies: "Unlimited Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
+      color: "#18403C"
     },
     {
       title: "Human Resource",
       description: "Skilled HR professionals to manage talent acquisition, employee relations, and organizational development.",
-      icon: FaUsers,
+      logo: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
       vacancies: "200+ Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
+      color: "#18403C"
     },
     {
       title: "Finance",
       description: "Financial experts for accounting, auditing, budgeting, and financial planning and analysis.",
-      icon: FaChartLine,
+      logo: "https://cdn-icons-png.flaticon.com/512/2965/2965328.png",
       vacancies: "200+ Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
+      color: "#18403C"
     },
     {
       title: "Business Development",
       description: "Strategic business development professionals to drive growth and expand market presence.",
-      icon: FaRocket,
+      logo: "https://cdn-icons-png.flaticon.com/512/2917/2917995.png",
       vacancies: "Unlimited Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
+      color: "#18403C"
     },
     {
       title: "Sales & Marketing",
       description: "Dynamic sales and marketing experts to boost brand visibility and drive revenue growth.",
-      icon: FaBullhorn,
+      logo: "https://cdn-icons-png.flaticon.com/512/2965/2965359.png",
       vacancies: "Unlimited Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
+      color: "#18403C"
     },
     {
       title: "Pharma & FMCG",
       description: "Specialized professionals for pharmaceutical and fast-moving consumer goods industries.",
-      icon: FaFlask,
+      logo: "https://cdn-icons-png.flaticon.com/512/2917/2917988.png",
       vacancies: "100+ Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
+      color: "#18403C"
     },
     {
       title: "Design & Creative",
       description: "Creative designers and artists for UI/UX, graphic design, and visual communication.",
-      icon: FaPalette,
+      logo: "https://cdn-icons-png.flaticon.com/512/2933/2933242.png",
       vacancies: "100+ Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
+      color: "#18403C"
     }
   ];
 
@@ -109,7 +93,7 @@ const SectorsPage = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 min-h-screen py-12 sm:py-16 md:py-20 px-4 park">
+    <div className="bg-gradient-to-b from-white to-gray-50 min-h-screen py-12 sm:py-16 md:py-20 px-4">
       <div className="container mx-auto">
         {/* Header Section */}
         <div 
@@ -158,10 +142,9 @@ const SectorsPage = () => {
           </div>
         </div>
 
-        {/* Sectors Grid - Circle Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+        {/* Sectors Grid - Circle Cards with Logo Images */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
           {sectors.map((sector, index) => {
-            const IconComponent = sector.icon;
             const isHovered = hoveredIndex === index;
             const elementId = `sector-${index}`;
             
@@ -179,22 +162,26 @@ const SectorsPage = () => {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <div className="group text-center">
-                  {/* Circle Icon */}
+                  {/* Circle Logo Container */}
                   <div
-                    className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto rounded-full flex items-center justify-center transition-all duration-500 cursor-pointer"
+                    className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto rounded-full flex items-center justify-center transition-all duration-500 cursor-pointer bg-white shadow-lg"
                     style={{
                       background: isHovered 
                         ? "linear-gradient(135deg, #18403C 0%, #2c6b64 100%)" 
-                        : "#18403C10",
+                        : "white",
                       transform: isHovered ? "scale(1.1)" : "scale(1)",
                       boxShadow: isHovered 
                         ? "0 20px 35px -12px rgba(24, 64, 60, 0.3)" 
                         : "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
                     }}
                   >
-                    <IconComponent 
-                      className="text-4xl sm:text-5xl md:text-6xl transition-all duration-500" 
-                      style={{ color: isHovered ? "white" : "#18403C" }}
+                    <img 
+                      src={sector.logo} 
+                      alt={sector.title}
+                      className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain transition-all duration-500"
+                      style={{
+                        filter: isHovered ? "brightness(0) invert(1)" : "none"
+                      }}
                     />
                     
                     {/* Pulse Effect on Hover */}
@@ -212,13 +199,22 @@ const SectorsPage = () => {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed px-2 mb-3">
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed px-2 mb-3 line-clamp-2">
                     {sector.description}
                   </p>
 
-                
+                  {/* Vacancy Badge */}
+                  <div className="inline-block bg-[#18403C]/10 rounded-full px-3 py-1 mb-3">
+                    <span className="text-xs font-semibold text-[#18403C]">{sector.vacancies}</span>
+                  </div>
 
-              
+                  {/* Apply Button */}
+                  <div className="mt-2">
+                    <button className="group/btn inline-flex items-center gap-1 text-[#18403C] font-medium text-sm hover:gap-2 transition-all duration-300">
+                      Apply Now
+                      <FaArrowRight className="text-xs transition-transform duration-300 group-hover/btn:translate-x-1" />
+                    </button>
+                  </div>
                 </div>
               </div>
             );
@@ -240,6 +236,16 @@ const SectorsPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Add custom styles for line-clamp */}
+      <style jsx>{`
+        .line-clamp-2 {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      `}</style>
     </div>
   );
 };
