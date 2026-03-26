@@ -24,37 +24,37 @@ const TestimonialSlider = () => {
     {
       id: 1,
       name: "Rajesh Mehta",
-      position: "HR Director",
-      company: "Tech Mahindra",
+      position: "Project Director",
+      company: "Tata Projects Ltd.",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop",
       rating: 5,
-      testimonial: "Zenon Hiring Solution has been an exceptional partner in our talent acquisition journey. Their understanding of our industry requirements and ability to deliver quality candidates within tight deadlines is remarkable. Highly recommended!",
+      testimonial: "Crafx Services has been an exceptional partner in our infrastructure projects. Their expertise in procurement and contract management is remarkable. Highly recommended!",
       date: "March 2024",
-      location: "Noida, India",
+      location: "Mumbai, India",
       linkedin: "#",
       twitter: "#"
     },
     {
       id: 2,
       name: "Priya Sharma",
-      position: "CEO",
-      company: "Innovative Solutions Pvt Ltd",
+      position: "VP Operations",
+      company: "Reliance Infrastructure",
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=150&h=150&fit=crop",
       rating: 5,
-      testimonial: "The team at Zenon Hiring Solution went above and beyond to help us find the perfect candidates for our startup. Their personalized approach and dedication to understanding our culture made all the difference. Truly a game-changer!",
+      testimonial: "The team at Crafx went above and beyond to ensure timely delivery of our highway project. Their dedication and professionalism made all the difference. Truly a game-changer!",
       date: "February 2024",
-      location: "Gurgaon, India",
+      location: "Delhi NCR, India",
       linkedin: "#",
       twitter: "#"
     },
     {
       id: 3,
       name: "Amit Kumar",
-      position: "Technical Lead",
-      company: "Amazon India",
+      position: "Head - Contracts",
+      company: "L&T Construction",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop",
       rating: 5,
-      testimonial: "As a candidate, my experience with Zenon Hiring Solution was outstanding. They guided me through the entire recruitment process and helped me land my dream job at Amazon. Their team is professional, supportive, and truly cares about your success.",
+      testimonial: "Working with Crafx Services has been outstanding. Their team's deep understanding of supply chain management and contract execution is exceptional.",
       date: "January 2024",
       location: "Bangalore, India",
       linkedin: "#",
@@ -63,11 +63,11 @@ const TestimonialSlider = () => {
     {
       id: 4,
       name: "Neha Gupta",
-      position: "Operations Manager",
-      company: "Reliance Industries",
+      position: "Project Manager",
+      company: "J Kumar Infraprojects",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop",
       rating: 5,
-      testimonial: "Zenon Hiring Solution transformed our hiring process. Their innovative approach and deep understanding of our industry helped us reduce hiring time by 40%. The quality of candidates they provide is consistently excellent.",
+      testimonial: "Crafx Services transformed our procurement process. Their expertise helped us reduce project delays by 40%. The quality of their consultancy is consistently excellent.",
       date: "December 2023",
       location: "Mumbai, India",
       linkedin: "#",
@@ -76,11 +76,11 @@ const TestimonialSlider = () => {
     {
       id: 5,
       name: "Vikram Singh",
-      position: "Founder",
-      company: "StartUp India",
+      position: "CEO",
+      company: "Infra Solutions Ltd",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop",
       rating: 4.5,
-      testimonial: "Working with Zenon Hiring Solution has been a pleasure. They understood our startup's unique needs and delivered exceptional talent that aligned perfectly with our vision. Their team is responsive, professional, and results-driven.",
+      testimonial: "Working with Crafx Services has been a pleasure. They understood our project requirements and delivered exceptional support. Their team is responsive, professional, and results-driven.",
       date: "November 2023",
       location: "Delhi, India",
       linkedin: "#",
@@ -136,14 +136,14 @@ const TestimonialSlider = () => {
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <div className="inline-flex items-center gap-2 bg-[#18403C]/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-3 sm:mb-4">
             <FaQuoteLeft className="text-[#18403C] text-xs sm:text-sm" />
-            <span className="text-[#18403C] font-medium text-xs sm:text-sm">Testimonials</span>
+            <span className="text-[#18403C] font-medium text-xs sm:text-sm">Client Testimonials</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#18403C] mb-2 sm:mb-3 md:mb-4">
             What Our Clients Say
           </h2>
           <div className="w-16 sm:w-20 h-0.5 sm:h-1 bg-gradient-to-r from-[#18403C] to-[#2c6b64] mx-auto rounded-full"></div>
           <p className="text-gray-600 mt-3 sm:mt-4 text-sm sm:text-base max-w-2xl mx-auto px-4">
-            Real stories from our satisfied clients and successful candidates
+            Real feedback from our valued partners in infrastructure development
           </p>
         </div>
 

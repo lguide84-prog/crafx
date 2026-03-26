@@ -21,12 +21,12 @@ const CenteredHeroPage = () => {
           <div className="max-w-2xl mx-auto">
             {/* Heading */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6 leading-tight animate-fade-in">
-           Take the first step toward building your dream team.
+              Partner with us for excellence in infrastructure development.
             </h1>
 
             {/* Paragraph */}
             <p className="text-md md:text-lg lg:text-md text-gray-200 mb-10 leading-relaxed max-w-2xl mx-auto">
-             Start using Linkrow today and connect with top talent faster and more efficiently!
+              Crafx Services Pvt. Ltd. delivers trusted expertise in Supply Chain Management, Procurement & Contracts, and Project Execution across India.
             </p>
 
             {/* Buttons */}

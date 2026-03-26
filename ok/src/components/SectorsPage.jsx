@@ -15,7 +15,14 @@ import {
   FaCar,
   FaBuilding,
   FaBolt,
-  FaIndustry
+  FaIndustry,
+  FaHandshake,
+  FaHardHat,
+  FaShieldAlt,
+  FaUserTie,
+  FaPaintBrush,
+  FaPhoneAlt,
+  FaBriefcase
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
@@ -33,101 +40,77 @@ const SectorsPage = () => {
 
   const sectors = [
     {
-      title: "Information Technology",
-      description: "We provide advice, guidelines and a road map for sourcing, utilizing and managing IT assets and resources.",
-      icon: FaLaptopCode,
-      vacancies: "100+ Vacancy",
+      title: "Project Management Consultancy",
+      description: "Expert PMC services for large-scale infrastructure projects ensuring timely delivery and quality compliance.",
+      icon: FaBriefcase,
+      vacancies: "Active Projects",
       color: "#18403C",
       bgColor: "#18403C10"
     },
     {
-      title: "Customer Service",
-      description: "Expert customer service professionals dedicated to delivering exceptional support and client satisfaction.",
-      icon: FaHeadset,
-      vacancies: "Unlimited Vacancy",
+      title: "General Consultancy",
+      description: "Comprehensive advisory services for infrastructure development, procurement, and contract management.",
+      icon: FaHandshake,
+      vacancies: "PAN India",
       color: "#18403C",
       bgColor: "#18403C10"
     },
     {
-      title: "Human Resource",
-      description: "Skilled HR professionals to manage talent acquisition, employee relations, and organizational development.",
-      icon: FaUsers,
-      vacancies: "200+ Vacancy",
+      title: "Products Promotion",
+      description: "Strategic marketing and promotion of products across infrastructure and industrial sectors.",
+      icon: FaBullhorn,
+      vacancies: "Pan India",
       color: "#18403C",
       bgColor: "#18403C10"
     },
   {
-  title: "BFSI",
-  description: "Skilled professionals in Banking, Financial Services, and Insurance, specializing in risk management, investment planning, auditing, compliance, and financial analysis.",
-  icon: FaChartLine,
-  vacancies: "200+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-},
-    {
-      title: "Business Development",
-      description: "Strategic business development professionals to drive growth and expand market presence.",
-      icon: FaRocket,
-      vacancies: "Unlimited Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
-    },
-    {
-      title: "Sales & Marketing",
-      description: "Dynamic sales and marketing experts to boost brand visibility and drive revenue growth.",
-      icon: FaBullhorn,
-      vacancies: "Unlimited Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
-    },
-    {
-      title: "Pharma & FMCG",
-      description: "Specialized professionals for pharmaceutical and fast-moving consumer goods industries.",
-      icon: FaFlask,
-      vacancies: "100+ Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
-    },
-    {
-      title: "Design & Creative",
-      description: "Creative designers and artists for UI/UX, graphic design, and visual communication.",
-      icon: FaPalette,
-      vacancies: "100+ Vacancy",
-      color: "#18403C",
-      bgColor: "#18403C10"
-    },
-    {
-  title: "Automobile",
-  description: "Experienced professionals in automobile, manufacturing, telecommunication, and power distribution sectors, delivering efficient workforce solutions to drive organizational growth.",
-  icon: FaCar,
-  vacancies: "100+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-},
-{
-  title: "Building Infrastructure",
-  description: "Reliable workforce and payroll solutions for infrastructure projects, ensuring smooth operations, compliance, and timely workforce management.",
+  title: "Property & Real Estate Consultancy",
+  description: "Expert guidance for property acquisition, development, and real estate investment strategies.",
   icon: FaBuilding,
-  vacancies: "100+ Vacancy",
+  vacancies: "PAN India",
   color: "#18403C",
   bgColor: "#18403C10"
 },
-{
-  title: "Power & Energy",
-  description: "Skilled professionals focused on energy optimization, utility analysis, and efficient resource management to reduce costs and improve sustainability.",
-  icon: FaBolt,
-  vacancies: "100+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-},
-{
-  title: "Manufacturing & Processes",
-  description: "Expert workforce solutions to support manufacturing operations and process improvements, helping organizations implement change and enhance productivity.",
-  icon: FaIndustry,
-  vacancies: "100+ Vacancy",
-  color: "#18403C",
-  bgColor: "#18403C10"
-}
+    {
+      title: "Structural & Architectural Design",
+      description: "Comprehensive structural and architectural design services with detailed drawings and specifications.",
+      icon: FaPaintBrush,
+      vacancies: "PAN India",
+      color: "#18403C",
+      bgColor: "#18403C10"
+    },
+    {
+      title: "Project Liaising",
+      description: "Professional liaison services for project approvals, regulatory compliance, and stakeholder coordination.",
+      icon: FaPhoneAlt,
+      vacancies: "PAN India",
+      color: "#18403C",
+      bgColor: "#18403C10"
+    },
+    {
+      title: "Manpower Supply",
+      description: "Skilled and experienced manpower solutions for construction, infrastructure, and industrial projects.",
+      icon: FaUsers,
+      vacancies: "PAN India",
+      color: "#18403C",
+      bgColor: "#18403C10"
+    },
+    {
+      title: "Security Services",
+      description: "Comprehensive security solutions for project sites, facilities, and infrastructure assets.",
+      icon: FaShieldAlt,
+      vacancies: "PAN India",
+      color: "#18403C",
+      bgColor: "#18403C10"
+    },
+    {
+      title: "Professional Support Services",
+      description: "End-to-end professional support services including technical assistance and operational support.",
+      icon: FaHardHat,
+      vacancies: "PAN India",
+      color: "#18403C",
+      bgColor: "#18403C10"
+    }
   ];
 
   // Intersection Observer for scroll animations
@@ -168,41 +151,41 @@ const SectorsPage = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-[#18403C]/10 px-4 py-2 rounded-full mb-4 md:mb-6">
             <FaGlobe className="text-[#18403C] text-sm md:text-base" />
-            <span className="text-[#18403C] font-medium text-sm">Current Openings</span>
+            <span className="text-[#18403C] font-medium text-sm">Our Services</span>
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-[#18403C] to-[#2c6b64] bg-clip-text text-transparent">
-       Industries We Serve
+       Our Professional Services
           </h2>
           
           <div className="w-20 h-1 bg-gradient-to-r from-[#18403C] to-[#2c6b64] mx-auto mb-4 md:mb-6 rounded-full"></div>
           
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-            Find your dream job across various industries with thousands of exciting opportunities
+            Delivering excellence with comprehensive consultancy and professional support services
           </p>
         </div>
 
         {/* Stats Row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12 md:mb-16">
           <div className="bg-white rounded-2xl p-4 shadow-lg text-center">
-            <div className="text-2xl font-bold text-[#18403C]">750+</div>
-            <div className="text-xs text-gray-500">Active Jobs</div>
+            <div className="text-2xl font-bold text-[#18403C]">25+</div>
+            <div className="text-xs text-gray-500">Years Experience</div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-lg text-center">
-            <div className="text-2xl font-bold text-[#18403C]">200+</div>
-            <div className="text-xs text-gray-500">Companies</div>
+            <div className="text-2xl font-bold text-[#18403C]">50+</div>
+            <div className="text-xs text-gray-500">Projects Executed</div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-lg text-center">
-            <div className="text-2xl font-bold text-[#18403C]">20K+</div>
-            <div className="text-xs text-gray-500">Candidates</div>
+            <div className="text-2xl font-bold text-[#18403C]">PAN India</div>
+            <div className="text-xs text-gray-500">Geographic Reach</div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-lg text-center">
-            <div className="text-2xl font-bold text-[#18403C]">92%</div>
-            <div className="text-xs text-gray-500">Success Rate</div>
+            <div className="text-2xl font-bold text-[#18403C]">100%</div>
+            <div className="text-xs text-gray-500">Client Satisfaction</div>
           </div>
         </div>
 
-        {/* Sectors Grid - Circle Cards */}
+        {/* Services Grid - Circle Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
           {sectors.map((sector, index) => {
             const IconComponent = sector.icon;
@@ -227,10 +210,10 @@ const SectorsPage = () => {
                   <div
                     className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto rounded-full flex items-center justify-center transition-all duration-500 cursor-pointer"
                  style={{
-  background: "#3b82f6",   // 👈 always blue
+  background: "#3b82f6",
   transform: isHovered ? "scale(1.1)" : "scale(1)",
   boxShadow: isHovered 
-    ? "0 20px 35px -12px rgba(59, 130, 246, 0.4)" // 👈 blue shadow
+    ? "0 20px 35px -12px rgba(59, 130, 246, 0.4)"
     : "0 10px 25px -5px rgba(0, 0, 0, 0.1)"
 }}
                   >
@@ -271,13 +254,13 @@ const SectorsPage = () => {
         <div className="mt-16 md:mt-20 text-center">
           <div className="bg-gradient-to-r from-[#18403C] to-[#2c6b64] rounded-3xl p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              Don't See Your Dream Job?
+              Looking for Expert Consultancy?
             </h3>
             <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-              Submit your resume and our recruitment team will find the perfect opportunity for you
+              Connect with our team to discuss how we can support your next infrastructure project
             </p>
             <button onClick={gocareer} className="bg-white text-[#18403C] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Upload Resume
+              Contact Us
             </button>
           </div>
         </div>

@@ -35,19 +35,21 @@ const Footer = () => {
   ];
 
 const services = [
-  { name: "Infrastructure", path: "#infrastructure" },
-  { name: "Mining & Metals", path: "#mining" },
-  { name: "Power & Energy", path: "#power" },
-  { name: "Telecommunication", path: "#telecom" },
-  { name: "Manufacturing & Processes", path: "#manufacturing" },
-  { name: "Aviation & Aerospace", path: "#aviation" },
-  { name: "Information Technology", path: "#it" },
+  { name: "Project Management Consultancy (PMC)", path: "#project-management" },
+  { name: "General Consultancy", path: "#general-consultancy" },
+  { name: "Products Promotion", path: "#products-promotion" },
+  { name: "Property & Real Estate Consultancy", path: "#real-estate" },
+  { name: "Structural & Architectural Design & Drawings", path: "#design-drawings" },
+  { name: "Project Liaising", path: "#project-liaising" },
+  { name: "Manpower Supply", path: "#manpower-supply" },
+  { name: "Security Services", path: "#security-services" },
+  { name: "Other Professional Support Services", path: "#other-services" },
 ];
 
   const contactInfo = [
-    { icon: FaMapMarkerAlt, text: "B-45, Sector 62, Noida, Uttar Pradesh - 201301, India", link: null },
-    { icon: FaPhoneAlt, text: "+91 98765 43210", link: "tel:+919876543210" },
-    { icon: FaEnvelope, text: "info@zenonhiring.com", link: "mailto:info@zenonhiring.com" },
+    { icon: FaMapMarkerAlt, text: "7th Floor, Gateway Plaza, Hiranandani Business Park, Powai, Mumbai - 400076", link: null },
+    { icon: FaPhoneAlt, text: "+91 7715011000", link: "tel:+917715011000" },
+    { icon: FaEnvelope, text: "info@crafx.in", link: "mailto:info@crafx.in" },
     { icon: FaClock, text: "Mon - Fri: 9:00 AM - 6:00 PM", link: null },
   ];
 
@@ -79,16 +81,16 @@ const services = [
           {/* Company Info Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-             <img src="/images/logo1.png" className="h-25 w-35"/>
+             <img src="/images/logo5.png" className="h-25 w-35"/>
              
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Your trusted recruitment partner in Noida, dedicated to connecting exceptional talent with leading organizations across India.
+              Crafx Services Pvt. Ltd. is a technology-driven organization specializing in Supply Chain Management, Procurement & Contracts, and Project Execution for large-scale infrastructure developments across India.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <div className="flex items-center gap-2 text-white/80 text-sm">
                 <FaHeart className="text-red-400" />
-                <span>Making careers happen since 2018</span>
+                <span>Building India's infrastructure since 2020</span>
               </div>
             </div>
           </div>
@@ -187,54 +189,11 @@ const services = [
           </div>
         </div>
 
-        {/* Newsletter Section */}
-        <div className="mt-12 pt-8 border-t border-white/20">
-          <div className="grid md:grid-cols-2 gap-6 items-center">
-            <div>
-              <h3 className="text-xl font-bold mb-2">Subscribe to Our Newsletter</h3>
-              <p className="text-white/70 text-sm">Get the latest job updates and career tips directly in your inbox.</p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input 
-                type="email" 
-                placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-[#2c6b64] transition-all"
-              />
-              <button className="group bg-[#2c6b64] hover:bg-[#18403C] px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-lg">
-                Subscribe
-                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-          </div>
-        </div>
+       
 
-        {/* Bottom Bar */}
-        <div className="mt-8 pt-6 border-t border-white/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/60 text-sm">
-              © {currentYear} Zenon Hiring Solution. All rights reserved.
-            </p>
-            <div className="flex gap-6">
-              <a href="/privacy-policy" className="text-white/60 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </a>
-              <a href="/terms-conditions" className="text-white/60 hover:text-white text-sm transition-colors">
-                Terms & Conditions
-              </a>
-              <a href="/sitemap" className="text-white/60 hover:text-white text-sm transition-colors">
-                Sitemap
-              </a>
-            </div>
-          </div>
-        </div>
+        
 
-        {/* Floating Badge */}
-        <div className="absolute bottom-8 right-8 hidden lg:block">
-          <div className="bg-white/10 backdrop-blur-md rounded-full px-4 py-2 flex items-center gap-2 shadow-xl">
-            <FaRocket className="text-[#2c6b64] animate-pulse" />
-            <span className="text-white text-sm font-medium">Trusted by 200+ Companies</span>
-          </div>
-        </div>
+        
       </div>
     </footer>
   );

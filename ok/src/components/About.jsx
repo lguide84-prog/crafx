@@ -27,34 +27,33 @@ const About = () => {
                 About Us
               </span>
               <h2 className="text-3xl md:text-4xl font-semibold text-[#18403C] mt-2">
-             Platform designed to streamline the hiring process and connect businesses with top-tier talent.
+                Professional Consultancy & Technical Support Services
               </h2>
             </div>
 
             {/* First Paragraph */}
             <p className="text-gray-600 text-md leading-relaxed mb-6">
-            We understand that finding the right people is key to your success, which is why our platform offers personalized recruitment strategies tailored to your unique needs.
+              Crafx Services Pvt. Ltd. is a technology-driven organization specializing in Supply Chain Management, Procurement & Contracts, and Project Execution for large-scale infrastructure developments including Metros, Roads & Highways, Tunnels, Bridges, Buildings, and Mining on a PAN India basis.
             </p>
 
             {/* Subheading */}
             <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
-             Mission
-
+              Our Mission
             </h3>
 
             {/* Second Paragraph */}
             <p className="text-gray-600 leading-relaxed mb-2">
-            Our mission is to connect businesses with the best talent by offering personalized, efficient, and data-driven hiring solutions that foster long-term success.
+              To become the world's most promising service-driven company and create miracles in association with our prestigious clients, while working for the development of our nation and supporting a developing India.
             </p>
 
             {/* Third Heading */}
             <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-             Approach
+              Our Approach
             </h3>
 
             {/* Third Paragraph */}
             <p className="text-gray-600 leading-relaxed mb-8">
-             We take a tailored approach to recruitment, understanding each business's unique culture, needs, and goals.
+              We follow a professional and transparent work process with experienced consultants and technical experts, focusing on quality, safety, compliances, timely project delivery, and strong client relationships.
             </p>
 
             {/* Button */}

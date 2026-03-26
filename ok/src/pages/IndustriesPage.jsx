@@ -18,7 +18,13 @@ import {
   FaBullhorn,
   FaFlask,
   FaPalette,
-  FaHardHat
+  FaHardHat,
+  FaHandshake,
+  FaPaintBrush,
+  FaPhoneAlt,
+  FaShieldAlt,
+  FaBriefcase,
+  FaUserTie
 } from "react-icons/fa";
 import { GiMining, GiOilRig, GiBridge } from "react-icons/gi";
 import { MdOutlineSecurity } from "react-icons/md";
@@ -29,93 +35,84 @@ const IndustriesPage = () => {
 
  const industries = [
   {
-    title: "Information Technology",
-    description: "We provide advice, guidelines and a road map for sourcing, utilizing and managing IT assets and resources.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
-    icon: FaLaptopCode,
-    stats: "24/7 Support",
-    vacancies: "100+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Customer Service",
-    description: "Expert customer service professionals dedicated to delivering exceptional support and client satisfaction.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop",
-    icon: FaHeadset,
-    stats: "Unlimited",
-    vacancies: "Unlimited Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Human Resource",
-    description: "Skilled HR professionals to manage talent acquisition, employee relations, and organizational development.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=400&fit=crop",
-    icon: FaUsers,
-    stats: "200+ Openings",
-    vacancies: "200+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "BFSI",
-    description: "Financial experts for accounting, auditing, budgeting, and financial planning and analysis.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-    icon: FaChartLine,
-    stats: "200+ Openings",
-    vacancies: "200+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Pharma & FMCG",
-    description: "Specialized professionals for pharmaceutical and fast-moving consumer goods industries.",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop",
-    icon: FaFlask,
-    stats: "100+ Openings",
-    vacancies: "100+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Design & Creative",
-    description: "Creative designers and artists for UI/UX, graphic design, and visual communication.",
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=400&fit=crop",
-    icon: FaPalette,
-    stats: "100+ Openings",
-    vacancies: "100+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Automobile",
-    description: "Expert workforce solutions for automotive manufacturing, assembly, and aftermarket services with skilled technicians and engineers.",
-    image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop",
-    icon: FaCar,
-    stats: "150+ Openings",
-    vacancies: "150+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Building Infrastructure",
-    description: "Reliable workforce and payroll solutions for infrastructure projects, ensuring smooth operations, compliance, and timely workforce management.",
+    title: "Project Management Consultancy",
+    description: "Expert PMC services for large-scale infrastructure projects ensuring timely delivery and quality compliance.",
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop",
-    icon: FaHardHat,
-    stats: "200+ Openings",
-    vacancies: "200+ Vacancy",
+    icon: FaBriefcase,
+    stats: "PAN India",
+    vacancies: "Active Projects",
     color: "#18403C"
   },
   {
-    title: "Power & Energy",
-    description: "Skilled professionals focused on energy optimization, utility analysis, and efficient resource management to reduce costs and improve sustainability.",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop",
-    icon: FaBolt,
-    stats: "100+ Openings",
-    vacancies: "100+ Vacancy",
+    title: "General Consultancy",
+    description: "Comprehensive advisory services for infrastructure development, procurement, and contract management.",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+    icon: FaHandshake,
+    stats: "PAN India",
+    vacancies: "Active Projects",
     color: "#18403C"
   },
   {
-    title: "Manufacturing & Processes",
-    description: "Comprehensive staffing solutions for manufacturing operations, quality control, supply chain management, and process optimization.",
-    image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&h=400&fit=crop",
-    icon: FaIndustry,
-    stats: "250+ Openings",
-    vacancies: "250+ Vacancy",
+    title: "Products Promotion",
+    description: "Strategic marketing and promotion of products across infrastructure and industrial sectors.",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
+    icon: FaBullhorn,
+    stats: "PAN India",
+    vacancies: "Active Projects",
+    color: "#18403C"
+  },
+  {
+    title: "Property & Real Estate Consultancy",
+    description: "Expert guidance for property acquisition, development, and real estate investment strategies.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+    icon: FaBuilding,
+    stats: "PAN India",
+    vacancies: "Active Projects",
+    color: "#18403C"
+  },
+  {
+    title: "Structural & Architectural Design",
+    description: "Comprehensive structural and architectural design services with detailed drawings and specifications.",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=400&fit=crop",
+    icon: FaPaintBrush,
+    stats: "PAN India",
+    vacancies: "Active Projects",
+    color: "#18403C"
+  },
+  {
+    title: "Project Liaising",
+    description: "Professional liaison services for project approvals, regulatory compliance, and stakeholder coordination.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
+    icon: FaPhoneAlt,
+    stats: "PAN India",
+    vacancies: "Active Projects",
+    color: "#18403C"
+  },
+  {
+    title: "Manpower Supply",
+    description: "Skilled and experienced manpower solutions for construction, infrastructure, and industrial projects.",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=400&fit=crop",
+    icon: FaUsers,
+    stats: "PAN India",
+    vacancies: "Active Projects",
+    color: "#18403C"
+  },
+  {
+    title: "Security Services",
+    description: "Comprehensive security solutions for project sites, facilities, and infrastructure assets.",
+    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=600&h=400&fit=crop",
+    icon: FaShieldAlt,
+    stats: "PAN India",
+    vacancies: "Active Projects",
+    color: "#18403C"
+  },
+  {
+    title: "Professional Support Services",
+    description: "End-to-end professional support services including technical assistance and operational support.",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
+    icon: FaUserTie,
+    stats: "PAN India",
+    vacancies: "Active Projects",
     color: "#18403C"
   }
 ];
@@ -156,14 +153,14 @@ const IndustriesPage = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-5 py-2 rounded-full mb-6">
               <FaIndustry className="text-white text-sm" />
-              <span className="text-white font-medium text-sm">Industries We Contribute</span>
+              <span className="text-white font-medium text-sm">Our Professional Services</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Empowering Industries
-              <span className="block text-white/90">with Expert Solutions</span>
+              Comprehensive Consultancy
+              <span className="block text-white/90">& Support Solutions</span>
             </h1>
             <p className="text-white/90 text-base md:text-xl mb-8 max-w-2xl mx-auto">
-              Delivering specialized staffing, inspection, and management solutions across diverse sectors worldwide
+              Delivering Project Management Consultancy, General Consultancy, Products Promotion, Property & Real Estate Consultancy, Structural & Architectural Design, Project Liaising, Manpower Supply, Security Services, and other professional support services nationwide
             </p>
           </div>
         </div>
@@ -181,36 +178,36 @@ const IndustriesPage = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
             <FaUsers className="text-3xl md:text-4xl text-[#18403C] mx-auto mb-2" />
-            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">50K+</div>
-            <div className="text-xs md:text-sm text-gray-600">Professionals Placed</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">25+</div>
+            <div className="text-xs md:text-sm text-gray-600">Years Experience</div>
           </div>
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
             <FaChartLine className="text-3xl md:text-4xl text-[#18403C] mx-auto mb-2" />
-            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">98%</div>
-            <div className="text-xs md:text-sm text-gray-600">Client Satisfaction</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">50+</div>
+            <div className="text-xs md:text-sm text-gray-600">Projects Executed</div>
           </div>
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
             <FaGlobe className="text-3xl md:text-4xl text-[#18403C] mx-auto mb-2" />
-            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">15+</div>
-            <div className="text-xs md:text-sm text-gray-600">States Served</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">PAN India</div>
+            <div className="text-xs md:text-sm text-gray-600">Geographic Reach</div>
           </div>
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
             <MdOutlineSecurity className="text-3xl md:text-4xl text-[#18403C] mx-auto mb-2" />
             <div className="text-2xl md:text-3xl font-bold text-[#18403C]">100%</div>
-            <div className="text-xs md:text-sm text-gray-600">Compliance Rate</div>
+            <div className="text-xs md:text-sm text-gray-600">Client Satisfaction</div>
           </div>
         </div>
       </div>
 
-      {/* Industries Grid Section */}
+      {/* Services Grid Section */}
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center mb-12 fade-up-element" id="industries-header">
           <h2 className="text-3xl md:text-4xl font-bold text-[#18403C] mb-4">
-            Our Industry Expertise
+            Our Professional Services
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#18403C] to-[#2c6b64] mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-            Explore current opportunities across various industries
+            Comprehensive solutions tailored to meet your project requirements
           </p>
         </div>
 
@@ -268,7 +265,7 @@ const IndustriesPage = () => {
                      
                       <div className="flex items-center gap-1">
                         <FaCheckCircle className="text-green-500 text-xs" />
-                        <span className="text-xs text-gray-500">Active</span>
+                        <span className="text-xs text-gray-500">Available PAN India</span>
                       </div>
                     </div>
                   </div>
@@ -292,14 +289,14 @@ const IndustriesPage = () => {
       <div className="container mx-auto px-4 pb-16 md:pb-24">
         <div className="bg-gradient-to-r from-[#18403C] to-[#2c6b64] rounded-3xl p-8 md:p-12 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
-            Ready to Start Your Career Journey?
+            Ready to Partner with Us?
           </h3>
           <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-            Submit your resume and let our experts find the perfect opportunity for you
+            Let's discuss how we can support your next project with our professional services
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-[#18403C] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Upload Resume
+              Contact Us
             </button>
            
           </div>

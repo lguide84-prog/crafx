@@ -14,40 +14,25 @@ const JobApplicationForm = () => {
   const [status, setStatus] = useState({ type: '', message: '' });
   
   // WhatsApp target number
-  const WHATSAPP_NUMBER = "+918929123678";
+  const WHATSAPP_NUMBER = "+917982474628";
   
-  // Generic Job options
+  // Job options - Updated for Infrastructure roles
   const jobOptions = [
     { value: '', label: '-- Select Job Preference --' },
-    { value: 'software-engineer', label: 'Software Engineer' },
-    { value: 'senior-software-engineer', label: 'Senior Software Engineer' },
-    { value: 'frontend-developer', label: 'Frontend Developer' },
-    { value: 'backend-developer', label: 'Backend Developer' },
-    { value: 'fullstack-developer', label: 'Full Stack Developer' },
-    { value: 'web-developer', label: 'Web Developer' },
-    { value: 'mobile-app-developer', label: 'Mobile App Developer' },
-    { value: 'ui-ux-designer', label: 'UI/UX Designer' },
-    { value: 'graphic-designer', label: 'Graphic Designer' },
-    { value: 'product-manager', label: 'Product Manager' },
-    { value: 'project-manager', label: 'Project Manager' },
-    { value: 'data-analyst', label: 'Data Analyst' },
-    { value: 'data-scientist', label: 'Data Scientist' },
-    { value: 'devops-engineer', label: 'DevOps Engineer' },
-    { value: 'qa-engineer', label: 'QA Engineer' },
-    { value: 'technical-support', label: 'Technical Support' },
-    { value: 'system-administrator', label: 'System Administrator' },
-    { value: 'database-administrator', label: 'Database Administrator' },
-    { value: 'network-engineer', label: 'Network Engineer' },
-    { value: 'cybersecurity-analyst', label: 'Cybersecurity Analyst' },
-    { value: 'cloud-engineer', label: 'Cloud Engineer' },
-    { value: 'ai-ml-engineer', label: 'AI/ML Engineer' },
-    { value: 'business-analyst', label: 'Business Analyst' },
-    { value: 'marketing-manager', label: 'Marketing Manager' },
-    { value: 'sales-manager', label: 'Sales Manager' },
-    { value: 'hr-manager', label: 'HR Manager' },
-    { value: 'content-writer', label: 'Content Writer' },
-    { value: 'digital-marketer', label: 'Digital Marketer' },
-    { value: 'seo-specialist', label: 'SEO Specialist' },
+    { value: 'project-manager', label: 'Project Manager - Infrastructure' },
+    { value: 'procurement-specialist', label: 'Procurement Specialist' },
+    { value: 'contracts-manager', label: 'Contracts Manager' },
+    { value: 'supply-chain-manager', label: 'Supply Chain Manager' },
+    { value: 'civil-engineer', label: 'Civil Engineer' },
+    { value: 'site-engineer', label: 'Site Engineer' },
+    { value: 'quality-assurance', label: 'Quality Assurance Engineer' },
+    { value: 'safety-officer', label: 'Safety Officer' },
+    { value: 'project-coordinator', label: 'Project Coordinator' },
+    { value: 'business-development', label: 'Business Development Executive' },
+    { value: 'quantity-surveyor', label: 'Quantity Surveyor' },
+    { value: 'billing-engineer', label: 'Billing Engineer' },
+    { value: 'planning-engineer', label: 'Planning Engineer' },
+    { value: 'construction-manager', label: 'Construction Manager' },
     { value: 'other', label: 'Other' }
   ];
   
@@ -126,7 +111,7 @@ const JobApplicationForm = () => {
       
       const jobLabel = getJobLabel(formData.jobPreference);
       
-      const message = `*📋 NEW JOB APPLICATION*\n\n` +
+      const message = `*📋 NEW JOB APPLICATION - Crafx Services*\n\n` +
         `*👤 Name:* ${formData.fullName.trim()}\n` +
         `*📧 Email:* ${formData.email.trim()}\n` +
         `*📱 Phone:* ${formData.phone.trim()}\n` +
@@ -185,10 +170,10 @@ const JobApplicationForm = () => {
         <div className="text-center mb-8">
         
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            Job Application Form
+            Career Application Form
           </h1>
           <p className="text-white">
-            Fill your details and send application via WhatsApp
+            Join Crafx Services - Fill your details and send application via WhatsApp
           </p>
         </div>
         
@@ -244,7 +229,7 @@ const JobApplicationForm = () => {
               <p className="text-xs text-gray-400 mt-1">Include country code (e.g., +91 for India)</p>
             </div>
             
-            {/* Job Preference - Generic Jobs */}
+            {/* Job Preference */}
             <div>
               <label className="block text-gray-700 font-semibold mb-2">
                 <i className="fas fa-briefcase text-indigo-500 mr-2"></i>

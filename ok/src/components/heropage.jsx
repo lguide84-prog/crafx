@@ -16,19 +16,19 @@ const HeroPage = () => {
   const slides = [
     {
       url: "/images/main1.jpg",
-      alt: "Recruitment background 1"
+      alt: "Infrastructure background 1"
     },
     {
       url: "/images/ne7.jpg",
-      alt: "Recruitment background 2"
+      alt: "Infrastructure background 2"
     },
     {
       url: "/images/ne3.jpg",
-      alt: "Recruitment background 3"
+      alt: "Infrastructure background 3"
     },
     {
       url: "/images/ne5.jpg",
-      alt: "Recruitment background 4"
+      alt: "Infrastructure background 4"
     }
   ];
 
@@ -91,15 +91,13 @@ const HeroPage = () => {
           <div className="max-w-2xl">
             {/* Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-light text-white mb-4 leading-tight park">
-              <span className="font-semibold">Recruitment</span> process <br />
-              <span className="">with smart solutions.</span>
+              <span className="font-semibold">Infrastructure</span> excellence <br />
+              <span className="">with trusted expertise.</span>
             </h1>
 
             {/* Subheading */}
             <p className="text-md text-gray-200 mb-8 park">
-              Linkrow is your trusted partner in recruitment, offering
-              personalized HR solutions that connect top talent with the right
-              opportunities.
+              Crafx Services Pvt. Ltd. is your trusted partner in Supply Chain Management, Procurement & Contracts, and Project Execution for large-scale infrastructure developments across India.
             </p>
 
             {/* Buttons */}

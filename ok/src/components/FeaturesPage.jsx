@@ -20,8 +20,8 @@ const FeaturesPage = () => {
           />
         </svg>
       ),
-      title: "Tailored Solutions",
-      description: "Custom recruitment strategies designed for your unique business needs."
+      title: "Project Management Consultancy",
+      description: "Expert PMC services for large-scale infrastructure projects ensuring timely delivery and quality compliance."
     },
     {
       id: 2,
@@ -41,8 +41,8 @@ const FeaturesPage = () => {
           />
         </svg>
       ),
-      title: "Faster Hiring",
-      description: "Streamlined processes that cut hiring time by 30%."
+      title: "General Consultancy",
+      description: "Comprehensive advisory services for infrastructure development, procurement, and contract management."
     },
     {
       id: 3,
@@ -62,8 +62,8 @@ const FeaturesPage = () => {
           />
         </svg>
       ),
-      title: "Access to Top Talent",
-      description: "Connect with highly qualified candidates across industries."
+      title: "Structural & Architectural Design",
+      description: "Comprehensive structural and architectural design services with detailed drawings and specifications."
     },
     {
       id: 4,
@@ -83,8 +83,8 @@ const FeaturesPage = () => {
           />
         </svg>
       ),
-      title: "Effortless Integration",
-      description: "Seamlessly integrate our platform with your existing HR tools for a  hiring experience."
+      title: "Manpower & Security Services",
+      description: "Skilled manpower solutions and comprehensive security services for construction, infrastructure, and industrial projects."
     }
   ];
 
@@ -95,14 +95,14 @@ const FeaturesPage = () => {
         {/* Centered Heading and Paragraph */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
          <h1 className="text-xl bg-whitefont-medium text-[#1F514C] mb-4">
-       Our Benefits
+       Our Services
           </h1>
            <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium text-[#1F514C] mb-4">
-          Platform designed to simplify and enhance the hiring process.
+          Comprehensive Professional Consultancy & Support Services
           </h1>
           
           <p className="text-sm md:text-md text-gray-600 leading-relaxed">
-        With personalized solutions tailored to your business needs, we connect you with the best talent quickly and efficiently, helping you build stronger, more effective teams.
+        With over 25 years of industry expertise, we provide Project Management Consultancy, General Consultancy, Products Promotion, Property & Real Estate Consultancy, Structural & Architectural Design, Project Liaising, Manpower Supply, Security Services, and other professional support services across India.
           </p>
         </div>
 
