@@ -15,20 +15,16 @@ const HeroPage = () => {
   // Array of background images
   const slides = [
     {
-      url: "/images/main1.jpg",
+      url: "/images/img1.webp",
       alt: "Infrastructure background 1"
     },
     {
-      url: "/images/ne7.jpg",
+      url: "/images/img2.jpg",
       alt: "Infrastructure background 2"
     },
     {
-      url: "/images/ne3.jpg",
+      url: "/images/img3.jpg",
       alt: "Infrastructure background 3"
-    },
-    {
-      url: "/images/ne5.jpg",
-      alt: "Infrastructure background 4"
     }
   ];
 

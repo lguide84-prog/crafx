@@ -165,11 +165,11 @@ const JobApplicationForm = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#18403C] to-[#2c6b64] py-8 px-4">
       
-      <div className="max-w-4xl mx-auto mt-20 lg:mt-10 park">
+      <div className="max-w-4xl mx-auto mt-20 lg:mt-25 park">
         {/* Header */}
         <div className="text-center mb-8">
         
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mt-10 mb-2 ">
             Career Application Form
           </h1>
           <p className="text-white">
