@@ -19,7 +19,12 @@ import {
   FaBriefcase,
   FaRocket,
   FaAward,
-  FaQuoteLeft
+  FaQuoteLeft,
+  FaLinkedin,
+  FaRegBuilding,
+  FaTrain,
+  FaPlane,
+  FaRoad
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import FeaturesPage from "../components/FeaturesPage";
@@ -61,8 +66,13 @@ const AboutUs = () => {
     }
   ];
 
-
-  
+  const sectors = [
+    { name: "Metro", icon: FaTrain },
+    { name: "Airports", icon: FaPlane },
+    { name: "Retail Infrastructure", icon: FaRegBuilding },
+    { name: "Roads & Highways", icon: FaRoad },
+    { name: "Urban Development", icon: FaBuilding }
+  ];
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -87,7 +97,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen park">
+    <div className="bg-white min-h-screen overflow-x-hidden">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-[#18403C] to-[#2c6b64] overflow-hidden">
         {/* Background Pattern */}
@@ -112,9 +122,9 @@ const AboutUs = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="group bg-white text-[#18403C] px-8 py-3 rounded-full font-semibold hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 justify-center">
                   Contact Us Today
-                  <img src="/images/ok1.svg"/>
+                  <img src="/images/ok1.svg" className="w-5 h-5" alt="arrow" />
                 </button>
-                <button  onClick={goservice} className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#18403C] transition-all duration-300">
+                <button onClick={goservice} className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#18403C] transition-all duration-300">
                   View Our Services
                 </button>
               </div>
@@ -124,7 +134,7 @@ const AboutUs = () => {
                 <img 
                   src="/images/about1.webp"
                   alt="Infrastructure Project"
-                  className="w-full h-[90vh] object-cover rounded-2xl"
+                  className="w-full h-auto max-h-[90vh] object-cover rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#18403C]/20 to-transparent"></div>
               </div>
@@ -145,7 +155,7 @@ const AboutUs = () => {
         </div>
         
         {/* Wave Decoration */}
-        <div className="absolute -bottom-20 left-0 right-0">
+        <div className="absolute -bottom-20 left-0 right-0 w-full">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path fill="#ffffff" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
           </svg>
@@ -178,6 +188,121 @@ const AboutUs = () => {
         </div>
       </div>
 
+
+    {/* Madhu Sharma - CEO Section */}
+<div className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      {/* Decorative Element Section - Replacing Image */}
+      <div className="relative fade-up-element order-2 md:order-1" id="ceo-decoration">
+        <div className="relative bg-gradient-to-br from-[#18403C] to-[#2c6b64] rounded-2xl shadow-2xl p-6 md:p-12">
+          {/* Quote or Vision Statement */}
+          <div className="relative z-10">
+            <FaQuoteLeft className="text-white/20 text-4xl md:text-6xl mb-6" />
+            <p className="text-white text-lg md:text-xl lg:text-2xl font-light leading-relaxed mb-8">
+              "Building excellence through integrated solutions and unwavering commitment to quality"
+            </p>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-0.5 bg-white/50"></div>
+              <span className="text-white/80 text-sm font-medium">Our Vision</span>
+            </div>
+          </div>
+          
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-24 md:w-32 h-24 md:h-32 bg-white/5 rounded-full -mr-12 md:-mr-16 -mt-12 md:-mt-16"></div>
+          <div className="absolute bottom-0 left-0 w-32 md:w-48 h-32 md:h-48 bg-white/5 rounded-full -ml-16 md:-ml-24 -mb-16 md:-mb-24"></div>
+        </div>
+        
+        {/* Stats Badge - Updated */}
+        <div className="absolute -bottom-6 -right-4 md:-right-6 bg-white rounded-xl p-3 md:p-4 shadow-xl border border-gray-100">
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className="bg-[#18403C] rounded-full p-1.5 md:p-2">
+              <FaAward className="text-white text-base md:text-xl" />
+            </div>
+            <div>
+              <div className="text-xl md:text-2xl font-bold text-[#18403C]">24+</div>
+              <div className="text-xs text-gray-500">Years Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Content Section - Unchanged */}
+      <div className="fade-up-element order-1 md:order-2" id="ceo-content">
+        <div className="inline-flex items-center gap-2 bg-[#18403C]/10 px-4 py-2 rounded-full mb-4">
+          <FaQuoteLeft className="text-[#18403C] text-sm" />
+          <span className="text-sm font-medium text-[#18403C]">Leadership</span>
+        </div>
+        
+        <h2 className="text-3xl md:text-4xl font-bold text-[#18403C] mb-2">
+          Madhu Sharma
+        </h2>
+        <p className="text-lg text-[#18403C]/80 font-semibold mb-4">
+          CEO, Crafx Services Pvt. Ltd.
+        </p>
+        <p className="text-gray-500 mb-4">
+          Part of the Aayushmanbhava Group
+        </p>
+        
+        <div className="w-20 h-1 bg-gradient-to-r from-[#18403C] to-[#2c6b64] mb-6 rounded-full"></div>
+        
+        <p className="text-gray-600 mb-4 leading-relaxed">
+          With over <span className="font-semibold text-[#18403C]">24 years of diversified experience</span> across infrastructure, digital solutions, retail projects, and large-scale project execution, I have been closely associated with delivering complex, multi-location assignments for enterprise and government clients.
+        </p>
+        
+        <p className="text-gray-600 mb-4 leading-relaxed">
+          My experience spans strategic business development, client acquisition, and end-to-end execution of high-value projects across sectors such as:
+        </p>
+        
+        {/* Sectors Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+          {sectors.map((sector, idx) => {
+            const Icon = sector.icon;
+            return (
+              <div key={idx} className="flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-2">
+                <Icon className="text-[#18403C] text-sm" />
+                <span className="text-sm text-gray-700">{sector.name}</span>
+              </div>
+            );
+          })}
+        </div>
+        
+        <p className="text-gray-600 mb-6 leading-relaxed">
+          Through my journey, I have observed critical challenges in project execution—<span className="font-medium">vendor fragmentation, delays, cost inefficiencies, and lack of integrated coordination</span>.
+        </p>
+        
+        {/* Contact Info - Commented out as in original
+        <div className="bg-gradient-to-r from-[#18403C]/5 to-transparent rounded-xl p-5 mb-6">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="bg-[#18403C] rounded-full p-2">
+              <FaPhoneAlt className="text-white text-sm" />
+            </div>
+            <span className="text-gray-700 font-medium">+91 98188 65522</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="bg-[#18403C] rounded-full p-2">
+              <FaEnvelope className="text-white text-sm" />
+            </div>
+            <span className="text-gray-700 font-medium">madhu.sharma@crafx.in</span>
+          </div>
+        </div> */}
+        
+        {/* CTA Buttons - Commented out as in original
+        <div className="flex flex-wrap gap-4">
+          <button className="group bg-[#18403C] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#2c6b64] transition-all duration-300 flex items-center gap-2">
+            Connect with Madhu
+            <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+          </button>
+          <button className="border-2 border-[#18403C] text-[#18403C] px-6 py-2.5 rounded-full font-semibold hover:bg-[#18403C] hover:text-white transition-all duration-300 flex items-center gap-2">
+            <FaLinkedin />
+            LinkedIn Profile
+          </button>
+        </div> */}
+      </div>
+    </div>
+  </div>
+</div>
+
       {/* Who We Are Section */}
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -208,7 +333,7 @@ const AboutUs = () => {
               <img 
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=500&fit=crop"
                 alt="Team at Work"
-                className="w-full h-auto"
+                className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#18403C]/20 to-transparent"></div>
             </div>
@@ -217,8 +342,11 @@ const AboutUs = () => {
         </div>
       </div>
   <FeaturesPage/>
+  
+  
+
       {/* Our Values Section */}
-      <div className="bg-gray-50 py-16 md:py-24">
+      <div className="bg-gray-50 py-16 md:py-24 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 fade-up-element" id="values-header">
             <h2 className="text-3xl md:text-4xl font-bold text-[#18403C] mb-4">
@@ -271,28 +399,28 @@ const AboutUs = () => {
             
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-[#18403C] text-xl mt-1" />
+                <FaMapMarkerAlt className="text-[#18403C] text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-[#18403C] mb-1">Address</h4>
-                  <p className="text-gray-600">7th Floor, Gateway Plaza, Hiranandani Business Park, Powai, Mumbai - 400076</p>
+                  <p className="text-gray-600 break-words">7th Floor, Gateway Plaza, Hiranandani Business Park, Powai, Mumbai - 400076</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaPhoneAlt className="text-[#18403C] text-xl mt-1" />
+                <FaPhoneAlt className="text-[#18403C] text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-[#18403C] mb-1">Phone</h4>
                   <p className="text-gray-600">+91 7715011000</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaEnvelope className="text-[#18403C] text-xl mt-1" />
+                <FaEnvelope className="text-[#18403C] text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-[#18403C] mb-1">Email</h4>
-                  <p className="text-gray-600">info@crafx.in</p>
+                  <p className="text-gray-600 break-words">info@crafx.in</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaClock className="text-[#18403C] text-xl mt-1" />
+                <FaClock className="text-[#18403C] text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-[#18403C] mb-1">Working Hours</h4>
                   <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
@@ -305,7 +433,7 @@ const AboutUs = () => {
             <img 
               src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600&h=400&fit=crop"
               alt="Mumbai City"
-              className="w-full h-96 object-cover"
+              className="w-full h-64 md:h-96 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
               <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4">
@@ -326,10 +454,10 @@ const AboutUs = () => {
           </div>
           
           <div className="relative p-8 md:p-12 text-center">
-            <h3 className="text-2xl md:text-4xl font-bold text-white mb-4">
+            <h3 className="text-xl md:text-2xl lg:text-4xl font-bold text-white mb-4">
               Ready to Partner for Your Next Project?
             </h3>
-            <p className="text-white/90 text-base md:text-lg mb-6 max-w-2xl mx-auto">
+            <p className="text-white/90 text-sm md:text-base lg:text-lg mb-6 max-w-2xl mx-auto">
               Let's work together to build India's infrastructure. Contact us today for a consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
