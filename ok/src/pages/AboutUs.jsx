@@ -214,11 +214,11 @@ const AboutUs = () => {
           <div className="relative z-10">
             <FaQuoteLeft className="text-white/20 text-4xl md:text-6xl mb-6" />
             <p className="text-white text-lg md:text-xl lg:text-2xl font-light leading-relaxed mb-8">
-              "Building excellence through integrated solutions and unwavering commitment to quality"
+              "Simplifying infrastructure execution through a single-window, solution-driven approach"
             </p>
             <div className="flex items-center gap-4">
               <div className="w-12 h-0.5 bg-white/50"></div>
-              <span className="text-white/80 text-sm font-medium">Our Vision</span>
+              <span className="text-white/80 text-sm font-medium">Our Mission</span>
             </div>
           </div>
           
@@ -227,7 +227,7 @@ const AboutUs = () => {
           <div className="absolute bottom-0 left-0 w-32 md:w-48 h-32 md:h-48 bg-white/5 rounded-full -ml-16 md:-ml-24 -mb-16 md:-mb-24"></div>
         </div>
         
-        {/* Stats Badge - Updated */}
+        {/* Stats Badge */}
         <div className="absolute -bottom-6 -right-4 md:-right-6 bg-white rounded-xl p-3 md:p-4 shadow-xl border border-gray-100">
           <div className="flex items-center gap-2 md:gap-3">
             <div className="bg-[#18403C] rounded-full p-1.5 md:p-2">
@@ -241,11 +241,11 @@ const AboutUs = () => {
         </div>
       </div>
       
-      {/* Content Section - Updated with Contact Information */}
+      {/* Content Section */}
       <div className="fade-up-element order-1 md:order-2" id="ceo-content">
         <div className="inline-flex items-center gap-2 bg-[#18403C]/10 px-4 py-2 rounded-full mb-4">
-          <FaQuoteLeft className="text-[#18403C] text-sm" />
-          <span className="text-sm font-medium text-[#18403C]">Leadership</span>
+          <FaUserTie className="text-[#18403C] text-sm" />
+          <span className="text-sm font-medium text-[#18403C]">CEO & Leadership</span>
         </div>
         
         <h2 className="text-3xl md:text-4xl font-bold text-[#18403C] mb-2">
@@ -261,31 +261,35 @@ const AboutUs = () => {
         <div className="w-20 h-1 bg-gradient-to-r from-[#18403C] to-[#2c6b64] mb-6 rounded-full"></div>
         
         <p className="text-gray-600 mb-4 leading-relaxed">
-          With over <span className="font-semibold text-[#18403C]">24 years of diversified experience</span> across infrastructure, digital solutions, retail projects, and large-scale project execution, I have been closely associated with delivering complex, multi-location assignments for enterprise and government clients.
+          With over <span className="font-semibold text-[#18403C]">24 years of diversified experience</span> across infrastructure, digital solutions, and large-scale project execution, I founded <span className="font-semibold">Crafx Services in 2019</span> to simplify infrastructure execution through a single-window, solution-driven approach.
         </p>
         
         <p className="text-gray-600 mb-4 leading-relaxed">
-          My experience spans strategic business development, client acquisition, and end-to-end execution of high-value projects across sectors such as:
+          My expertise spans strategic business development and end-to-end execution of high-value projects across <span className="font-medium">Metro, Airports, Retail Infrastructure, Roads & Highways, and Urban Development</span>.
         </p>
         
-        {/* Sectors Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
-          {sectors.map((sector, idx) => {
-            const Icon = sector.icon;
-            return (
-              <div key={idx} className="flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-2">
-                <Icon className="text-[#18403C] text-sm" />
-                <span className="text-sm text-gray-700">{sector.name}</span>
-              </div>
-            );
-          })}
+        {/* Key Services */}
+        <div className="grid grid-cols-2 gap-2 mb-6">
+          {[
+            "Construction Materials Supply",
+            "Machinery Supply & Hiring",
+            "Engineering Services",
+            "Project Liaisoning",
+            "Financial Facilitation",
+            "Strategic Partnerships"
+          ].map((service, idx) => (
+            <div key={idx} className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 bg-[#18403C] rounded-full"></div>
+              <span className="text-sm text-gray-600">{service}</span>
+            </div>
+          ))}
         </div>
         
         <p className="text-gray-600 mb-6 leading-relaxed">
-          Through my journey, I have observed critical challenges in project execution—<span className="font-medium">vendor fragmentation, delays, cost inefficiencies, and lack of integrated coordination</span>.
+          Our key strength lies in acting as a <span className="font-medium">single-point interface</span> ensuring seamless coordination, timely execution, quality assurance, and reduced operational complexities—backed by strategic partnerships with <span className="font-medium">Ultratech, JSW, Tata Steel, Asian Paints, and KNEST</span>.
         </p>
         
-        {/* Contact Information - Added similar to Tarun section */}
+        {/* Contact Information */}
         <div className="bg-gradient-to-r from-[#18403C]/5 to-transparent rounded-xl p-5 mb-6">
           <div className="flex items-center gap-3 mb-3">
             <div className="bg-[#18403C] rounded-full p-2">
@@ -294,18 +298,22 @@ const AboutUs = () => {
             <span className="text-gray-700 font-medium">+91 9891008636</span>
             <span className="text-gray-700 font-medium">+91 9818865522</span>
           </div>
-          
-          
+          <div className="flex items-center gap-3 mb-3">
+            <div className="bg-[#18403C] rounded-full p-2">
+              <FaEnvelope className="text-white text-sm" />
+            </div>
+            <span className="text-gray-700 font-medium">ceo@crafx.in</span>
+          </div>
         </div>
         
         {/* Additional Company Info */}
-        <div className="mb-6">
+        <div className="mb-4">
           <p className="text-sm text-gray-500">
             <span className="font-medium text-gray-700">Progrid Infra & Constructions Pvt. Ltd.:</span> www.progrid.in
           </p>
         </div>
         
-       
+        
       </div>
       
     </div>
@@ -522,6 +530,9 @@ const AboutUs = () => {
                 <FaPhoneAlt className="text-[#18403C] text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-[#18403C] mb-1">Phone</h4>
+                  <p className="text-gray-600">+91 9891008636 </p>
+                  <p className="text-gray-600">+91 9818865522</p>
+                  <p className="text-gray-600">+91 9505971133</p>
                   <p className="text-gray-600">+91 7715011000</p>
                 </div>
               </div>
@@ -529,6 +540,7 @@ const AboutUs = () => {
                 <FaEnvelope className="text-[#18403C] text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-[#18403C] mb-1">Email</h4>
+                  <p className="text-gray-600 break-words">ceo@crafx.in</p>
                   <p className="text-gray-600 break-words">info@crafx.in</p>
                 </div>
               </div>
