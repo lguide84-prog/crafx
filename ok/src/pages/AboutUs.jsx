@@ -298,11 +298,17 @@ const AboutUs = () => {
             <span className="text-gray-700 font-medium">+91 9891008636</span>
             <span className="text-gray-700 font-medium">+91 9818865522</span>
           </div>
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-center gap-3 mb-3 my-2">
             <div className="bg-[#18403C] rounded-full p-2">
               <FaEnvelope className="text-white text-sm" />
             </div>
             <span className="text-gray-700 font-medium">ceo@crafx.in</span>
+          </div>
+          <div className="flex items-center gap-3 mb-3">
+            <div className="bg-[#18403C] rounded-full p-2">
+              <FaEnvelope className="text-white text-sm" />
+            </div>
+            <span className="text-gray-700 font-medium">info@crafx.in</span>
           </div>
         </div>
         
@@ -371,7 +377,7 @@ const AboutUs = () => {
               
               {/* Contact Information */}
               <div className="bg-gradient-to-r from-[#18403C]/5 to-transparent rounded-xl p-5 mb-6">
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3 mb-2">
                   <div className="bg-[#18403C] rounded-full p-2">
                     <FaPhoneAlt className="text-white text-sm" />
                   </div>
@@ -380,10 +386,16 @@ const AboutUs = () => {
                 </div>
                 
                 <div className="flex items-center gap-3">
-                  <div className="bg-[#18403C] rounded-full p-2">
+                  <div className="bg-[#18403C] rounded-full p-2 my-2">
                     <FaEnvelope className="text-white text-sm" />
                   </div>
                   <span className="text-gray-700 font-medium">tarun.india@rediffmail.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="bg-[#18403C] rounded-full p-2">
+                    <FaEnvelope className="text-white text-sm" />
+                  </div>
+                  <span className="text-gray-700 font-medium">info@crafx.in</span>
                 </div>
               </div>
               
